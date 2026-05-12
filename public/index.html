@@ -3,116 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Depot Storage | Self Storage in Elizabethton, TN</title>
-  <meta name="description" content="Self-storage in Elizabethton, TN. Two unit sizes — 5x16 and 10x20. Call to reserve." />
+  <title>Elizabethton Depot Storage — Self Storage in Elizabethton, TN</title>
+  <meta name="description" content="Local self-storage in Elizabethton, Tennessee. Two unit sizes — 5×16 and 10×20. Bring your own lock. Call to reserve." />
+  <meta name="theme-color" content="#6F2E32" />
+
+  <!-- Favicons (PNG — small and instant; SVG would be 200KB at this complexity) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph / social card -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="Elizabethton Depot Storage" />
+  <meta property="og:description" content="Local self-storage in Elizabethton, TN. Two unit sizes, simple pricing." />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="logo">
-        <span class="logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/>
-            <path d="M3 7l9 4 9-4"/>
-            <path d="M12 11v10"/>
-          </svg>
-        </span>
-        <span class="logo-text">DEPOT<span>STORAGE</span></span>
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Elizabethton Depot Storage — home">
+        <img
+          src="/assets/logo.svg"
+          alt="Elizabethton Depot Storage"
+          class="logo-img"
+          width="64" height="64"
+          decoding="async"
+        />
       </a>
+
       <nav class="main-nav" aria-label="Main">
-        <a href="#sizes">Units</a>
+        <a href="#units">Units</a>
         <a href="#location">Location</a>
         <a href="#contact">Contact</a>
       </nav>
+
       <a href="tel:+15555555555" class="btn btn-primary header-cta">
-        <span class="phone-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-          </svg>
-        </span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
         <span class="header-cta-num">(555) 555-5555</span>
       </a>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-inner">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-inner">
         <div class="hero-copy">
-          <span class="eyebrow">Elizabethton, TN</span>
+          <span class="eyebrow">Elizabethton, Tennessee</span>
           <h1>
-            Self Storage<br/>
-            <span class="accent">in Elizabethton, TN.</span>
+            Self-storage,
+            <span class="h1-line2">plain and simple.</span>
           </h1>
-          <p class="lede">
-            Two unit sizes. Straightforward pricing. Give us a call to reserve.
+          <p class="hero-lede">
+            Two unit sizes. Straightforward pricing. Give us a call and we&rsquo;ll get you set up.
           </p>
           <div class="hero-actions">
-            <a href="#sizes" class="btn btn-primary btn-lg">See Units &amp; Prices</a>
-            <a href="tel:+15555555555" class="btn btn-ghost btn-lg">Call (555) 555-5555</a>
+            <a href="#units" class="btn btn-primary btn-lg">View Units &amp; Pricing</a>
+            <a href="tel:+15555555555" class="btn btn-outline btn-lg">Call to Reserve</a>
           </div>
         </div>
+
+        <aside class="hero-plaque" aria-label="Visit the depot">
+          <div class="hero-plaque-frame">
+            <img
+              src="/assets/logo.svg"
+              alt="Elizabethton Depot Storage"
+              class="hero-plaque-logo"
+              width="280" height="280"
+              decoding="async"
+            />
+            <div class="hero-plaque-divider" aria-hidden="true">
+              <span></span><i></i><span></span>
+            </div>
+            <div class="hero-plaque-addr">
+              453 East E Street<br/>
+              Elizabethton, TN&nbsp;37643
+            </div>
+            <div class="hero-plaque-meta">Carter County · Tennessee</div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section id="sizes" class="sizes">
-      <div class="container">
+    <!-- ============ UNITS ============ -->
+    <section id="units" class="units">
+      <div class="container-narrow">
         <div class="section-head">
           <span class="eyebrow">Units &amp; Pricing</span>
-          <h2>Our Units</h2>
+          <h2>Two sizes, honestly priced.</h2>
+          <div class="rule-diamond" aria-hidden="true"><i></i></div>
+          <p>Pick the size that fits, then call to reserve. Same simple terms either way.</p>
         </div>
 
-        <div class="size-grid">
-          <article class="size-card">
-            <div class="size-visual" aria-hidden="true">
-              <div class="size-box size-sm"></div>
-              <span class="size-label">5&prime; &times; 16&prime;</span>
+        <div class="units-grid">
+          <article class="unit-card">
+            <span class="unit-tag">Small Unit</span>
+            <p class="unit-size">5&times;16</p>
+            <p class="unit-sqft">80 sq ft &middot; about the size of a walk-in closet</p>
+
+            <div class="unit-visual" aria-hidden="true">
+              <span class="unit-visual-label">Approx. Scale</span>
+              <div class="unit-box unit-box-sm"></div>
             </div>
-            <h3>5&prime; &times; 16&prime;</h3>
-            <p class="size-sub">80 sq ft</p>
-            <div class="size-price">
+
+            <hr class="unit-divider" />
+
+            <div class="unit-price">
               <span class="amount">$65</span>
-              <span class="per">/ month</span>
+              <span class="per">per month</span>
             </div>
-            <a href="tel:+15555555555" class="btn btn-primary btn-block">Reserve 5&times;16</a>
+            <a href="tel:+15555555555" class="btn btn-primary btn-block">Reserve a 5&times;16</a>
           </article>
 
-          <article class="size-card">
-            <div class="size-visual" aria-hidden="true">
-              <div class="size-box size-lg"></div>
-              <span class="size-label">10&prime; &times; 20&prime;</span>
+          <article class="unit-card">
+            <span class="unit-tag">Large Unit</span>
+            <p class="unit-size">10&times;20</p>
+            <p class="unit-sqft">200 sq ft &middot; about the size of a one-car garage</p>
+
+            <div class="unit-visual" aria-hidden="true">
+              <span class="unit-visual-label">Approx. Scale</span>
+              <div class="unit-box unit-box-lg"></div>
             </div>
-            <h3>10&prime; &times; 20&prime;</h3>
-            <p class="size-sub">200 sq ft</p>
-            <div class="size-price">
+
+            <hr class="unit-divider" />
+
+            <div class="unit-price">
               <span class="amount">$85</span>
-              <span class="per">/ month</span>
+              <span class="per">per month</span>
             </div>
-            <a href="tel:+15555555555" class="btn btn-primary btn-block">Reserve 10&times;20</a>
+            <a href="tel:+15555555555" class="btn btn-primary btn-block">Reserve a 10&times;20</a>
           </article>
         </div>
 
-        <ul class="rental-terms" aria-label="Rental terms">
-          <li><strong>Deposit:</strong> First and last month required to reserve.</li>
-          <li><strong>Locks:</strong> Bring your own.</li>
-        </ul>
+        <!-- Rental terms plaque -->
+        <aside class="terms" aria-label="Rental terms">
+          <div class="terms-inner">
+            <div class="terms-title">Rental Terms</div>
+            <ul class="terms-list">
+              <li>
+                <strong>Deposit</strong>
+                First and last month required to reserve your unit.
+              </li>
+              <li>
+                <strong>Locks</strong>
+                Bring your own &mdash; you keep the only key.
+              </li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </section>
 
+    <!-- ============ LOCATION ============ -->
     <section id="location" class="location">
-      <div class="container location-inner">
+      <div class="location-inner">
         <div class="location-copy">
           <span class="eyebrow">Find Us</span>
-          <h2>Location</h2>
+          <h2>On East E Street.</h2>
+          <p class="location-intro">Right here in Elizabethton, just off the main routes through town.</p>
+
           <ul class="location-meta">
             <li>
               <strong>Address</strong>
               <a href="https://www.google.com/maps/search/?api=1&query=453+East+E+Street+Elizabethton+TN+37643" target="_blank" rel="noopener noreferrer">
-                453 East E Street<br/>Elizabethton, TN 37643
+                453 East E Street, Elizabethton, TN&nbsp;37643
               </a>
             </li>
             <li>
@@ -120,68 +187,74 @@
               <a href="tel:+15555555555">(555) 555-5555</a>
             </li>
           </ul>
-          <a href="tel:+15555555555" class="btn btn-primary btn-lg">Call to Reserve</a>
-        </div>
-        <div class="location-map">
-          <iframe
-            title="Map to Depot Storage at 453 East E Street, Elizabethton, TN"
-            src="https://www.google.com/maps?q=453+East+E+Street+Elizabethton+TN+37643&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
 
-    <section id="contact" class="contact">
-      <div class="container contact-inner">
-        <div class="contact-card">
-          <h2>Ready to Reserve?</h2>
-          <p>Give us a call and we&rsquo;ll get you set up.</p>
-          <div class="contact-actions">
-            <a href="tel:+15555555555" class="btn btn-secondary btn-lg">
-              <span class="phone-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
-              </span>
-              (555) 555-5555
-            </a>
-            <a href="https://www.google.com/maps/search/?api=1&query=453+East+E+Street+Elizabethton+TN+37643" target="_blank" rel="noopener noreferrer" class="btn btn-ghost-dark btn-lg">Get Directions</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=453+East+E+Street+Elizabethton+TN+37643" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+            Get Directions
+          </a>
+        </div>
+
+        <div class="location-map">
+          <div class="location-map-frame">
+            <iframe
+              title="Map to Elizabethton Depot Storage at 453 East E Street, Elizabethton, TN"
+              src="https://www.google.com/maps?q=453+East+E+Street+Elizabethton+TN+37643&output=embed"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <div class="container-narrow">
+        <div class="contact-card">
+          <span class="eyebrow">Ready When You Are</span>
+          <h2>Call to reserve a unit.</h2>
+          <p class="contact-card-sub">Give us a ring and we&rsquo;ll get you set up. No long forms, no waiting.</p>
+          <a href="tel:+15555555555" class="contact-phone" aria-label="Call (555) 555-5555">(555) 555-5555</a>
+          <div class="contact-actions">
+            <a href="tel:+15555555555" class="btn btn-on-dark btn-lg">Call Now</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=453+East+E+Street+Elizabethton+TN+37643" target="_blank" rel="noopener noreferrer" class="btn btn-on-dark btn-lg">Get Directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="footer-inner">
       <div class="footer-brand">
-        <span class="logo">
-          <span class="logo-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/>
-              <path d="M3 7l9 4 9-4"/>
-              <path d="M12 11v10"/>
-            </svg>
-          </span>
-          <span class="logo-text">DEPOT<span>STORAGE</span></span>
-        </span>
-        <p>Self-storage in Elizabethton, TN.</p>
+        <a href="#" class="footer-brand-mark" aria-label="Elizabethton Depot Storage — home">
+          <img
+            src="/assets/logo.svg"
+            alt="Elizabethton Depot Storage"
+            class="footer-logo"
+            width="120" height="120"
+            decoding="async"
+            loading="lazy"
+          />
+        </a>
+        <p>Local self-storage in Elizabethton, Tennessee.</p>
       </div>
+
       <div class="footer-col">
         <h4>Visit</h4>
-        <p>453 East E Street<br/>Elizabethton, TN 37643</p>
+        <p>453 East E Street<br/>Elizabethton, TN&nbsp;37643</p>
       </div>
+
       <div class="footer-col">
         <h4>Call</h4>
         <p><a href="tel:+15555555555">(555) 555-5555</a></p>
       </div>
     </div>
+
     <div class="footer-bottom">
       <div class="container">
-        <span>&copy; <span id="year"></span> Depot Storage. All rights reserved.</span>
-        <span>Elizabethton, TN</span>
+        <span>&copy; <span id="year"></span> Elizabethton Depot Storage. All rights reserved.</span>
+        <span>Elizabethton, Tennessee</span>
       </div>
     </div>
   </footer>
