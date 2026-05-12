@@ -142,7 +142,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   .main-nav { display: none; }
 }
 @media (max-width: 520px) {
-  .header-cta span:not(.phone-icon) { display: none; }
+  .header-cta .header-cta-num { display: none; }
 }
 
 /* ---------- Hero ---------- */
@@ -168,12 +168,9 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .hero-inner {
   position: relative;
-  display: grid;
-  grid-template-columns: 1.2fr .9fr;
-  gap: 56px;
-  align-items: center;
   padding: 84px 24px 96px;
 }
+.hero-copy { max-width: 720px; }
 .hero-copy h1 { color: #fff; }
 .hero-copy .accent { color: var(--primary); }
 .eyebrow {
@@ -333,9 +330,25 @@ section { padding: 80px 0; }
 .sizes { background: var(--bg-soft); }
 .size-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  max-width: 760px;
+  margin: 0 auto;
 }
+.rental-terms {
+  list-style: none;
+  padding: 18px 22px;
+  margin: 36px auto 0;
+  max-width: 760px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 8px;
+  color: var(--ink-soft);
+  font-size: .98rem;
+}
+.rental-terms strong { color: var(--ink); margin-right: 4px; }
 .size-card {
   position: relative;
   background: #fff;
